@@ -1,0 +1,45 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Adjusts to fit more cards per row based on screen size */
+    gap: 10px;
+    /* Reduces the space between cards */
+    padding: 20px;
+    justify-content: center;
+    /* Centers the cards in the container */
+}
+
+.card {
+    background-color: #8FBC8F;
+    /* A soft green background color for the cards */
+    border: 1px solid #ddd;
+    /* Keeps the border subtle */
+    border-radius: 5px;
+    /* Rounds the corners of the cards */
+    padding: 20px;
+    margin-bottom: 10px;
+    /* Adjusts spacing between rows */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow for depth */
+    transition: transform 0.2s;
+    /* Smooth transformation when interacted with */
+    cursor: pointer;
+    /* Changes the cursor to indicate clickable */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Slightly enlarges the card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Enhances the shadow on hover */
+}
+
+.card h2 {
+    color: #2F4F4F;
+    /* Darker shade for headings */
+}
+
+.card p {
+    color: #d9eae0;
+    /* Soft green for paragraph text, improving readability */
+}
