@@ -11,6 +11,16 @@
 </head>
 
 <body>
+    <script>
+        function passwordProtect() {
+            var password = prompt("Please enter the password to view this page:", "");
+            if (password != "qsln") {
+                window.location.href = "access-denied.html";
+            }
+        }
+
+        window.onload = passwordProtect;
+    </script>
     <header>
         <h1>Bamboo Plantation Fireproofing</h1>
     </header>
