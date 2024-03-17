@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007b5f;
+    color: white;
+}
+
+.main {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    width: calc(50% - 40px);
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: calc(100% - 40px);
+    }
+}
+
+
+/* Navigation Styling */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007b5f;
+    /* Adjust color to fit your theme */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Content Section Styling */
+
+.content-section {
+    margin-bottom: 20px;
+}
+
+
+/* Download Section Styling */
+
+.download-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    /* Light gray background for emphasis */
+    border-radius: 5px;
+}
+
+.download-section a {
+    color: #cc0000;
+    /* Earthy Red for download links */
+    font-weight: bold;
+}
+
+.download-section a {
+    display: inline-block;
+    background-color: #38761d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.download-section a:hover {
+    background-color: #2a5c3e;
+}
+
+
+/* Assuming existing styles, adding more for download links */
+
+.download-section a {
+    display: inline-block;
+    background-color: #38761d;
+    /* Adjust the color to fit your theme */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.download-section a:hover {
+    background-color: #2a5c3e;
+}
+
+
+/* Footer Styling - Assuming existing styles, add if needed */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #38761d;
+    color: white;
+}
